@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html long="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="white=device-width, initial-scale=1.0">
+        <title>My Love</title>
+        <style>
+            body {
+                font-family: Arial;
+                background-color: pink;
+                text-align: center;
+            }
+            img {
+                border-radius: 10px;
+            }
+            .card {
+                background: white;
+                width: 300px;
+                margin: auto;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            button {
+                padding: 5px 12px;
+                font-size: 16px;
+                margin-left: 5px;
+                border-radius: 10px;
+            }
+            input {
+                padding: 8px;
+                width: 250px;
+                font-size: 16px;
+                border-radius: 10px;
+            }
+            #re {
+                margin-top: 20px;
+                font-size: 20px;
+                color: green;
+            }
+            #er {
+                margin-top: 20px;
+                font-size: 20px;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>สวัสดีโลก</h1>
+        <h2>นี่คือ</h2>
+        <h2>แฟน</h2>
+        <h2>เรา</h2>
+        <img src="images/DSC00593.JPG" alt="ต้นอ้อ" width="150">
+        </div>
+        <br>
+        <input type="text" id="textinput">
+        <button onclick="showText()">แสดง</button>
+        <h1 id="re"></h1>
+        <h1 id="er"></h1>
+        <script>
+            function showText(){
+                let text = document.getElementById("textinput").value;
+                if (text === "130767") {
+                    document.getElementById("re").innerHTML = "รักเธอนะ";
+                    document.getElementById("re").className = "";
+                } else {
+                    document.getElementById("er").innerHTML = "นอย";
+                    document.getElementById("er").className = "er";
+                }
+            }
+      </script>
+    </body>
+</html>
